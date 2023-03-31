@@ -1,8 +1,3 @@
-import(dplyr)
-import(dbplyr)
-import(stringr)
-impoet(rlang)
-
 quicktable_bookmarks = function(con, ...) {
   con <- con
   args <-  ensyms(...)
@@ -63,4 +58,3 @@ read_sql = function(con, ...) {
 
 }
 
-export(read_sql)
