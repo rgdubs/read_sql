@@ -7,7 +7,6 @@ Description: Reads SQL
 License: None
 Encoding: UTF-8
 Depends: 
-    R,
     dplyr,
     dbplyr,
     stringr,
