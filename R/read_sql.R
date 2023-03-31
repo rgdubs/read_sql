@@ -1,3 +1,7 @@
+library(dplyr)
+library(dbplyr)
+library(stringi)
+
 quicktable_bookmarks = function(con, ...) {
   con <- con
   args <-  ensyms(...)

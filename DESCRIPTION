@@ -1,0 +1,10 @@
+Package: readsql
+Title: Reads SQL
+Version: 1
+Authors@R: 
+    person("Randall", "Webester")
+Description: Fill out later.
+License: None
+Encoding: UTF-8
+Imports: dplyr,dbplyr,stringi
+Exports: read_sql
