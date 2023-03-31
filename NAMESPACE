@@ -1,5 +1,5 @@
 export(read_sql)
-importFrom(dplyr,select,filter,if_any,everything)
-importFrom(dbplyr,tbl,in_schema)
+importFrom(dplyr,tbl,select,filter,if_any,everything)
+importFrom(dbplyr,in_schema)
 importFrom(stringr,str_detect)
 importFrom(rlang,ensyms,expr)
