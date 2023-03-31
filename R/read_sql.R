@@ -1,6 +1,6 @@
-library(dplyr)
-library(dbplyr)
-library(stringi)
+import(dplyr)
+import(dbplyr)
+import(stringi)
 
 quicktable_bookmarks = function(con, ...) {
   con <- con
@@ -61,3 +61,5 @@ read_sql = function(con, ...) {
   }
 
 }
+
+export(read_sql)
