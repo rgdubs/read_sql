@@ -14,8 +14,8 @@ quicktable_lazy = function(con, ...) {
   tbl(con, in_schema("information_schema", "tables")) %>%
     select(contains("table_name",ignore.case = TRUE)) %>%
     collect() %>%
-    filter(if_any(everything(),~str_detect(.x,paste("(?i)",args[2],sep="")))) # finish this by adding in detection of length()
-
+    filter(if_any(everything(), ~str_detect(.x, paste("(?i)", args[2], sep = ""))) & nchar(table_name) == nchar(args[2]))
+}
 }
 
 quicktable_call = function(con, ...) {
