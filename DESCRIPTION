@@ -6,5 +6,9 @@ Authors@R:
 Description: Reads SQL
 License: None
 Encoding: UTF-8
-Imports: dplyr,dbplyr,stringi
-Exports: read_sql
+Depends: 
+    R,
+    dplyr,
+    dbplyr,
+    stringr,
+    rlang
