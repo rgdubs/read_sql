@@ -3,4 +3,7 @@
 
 My SQL Reading Helper function for R
 
-I'll eventually turn this into a proper R package.
+This should work as a functional R package:
+
+library(devtools)
+install_github("rgdubs/read_sql")
