@@ -1,3 +1,5 @@
+
+# Used to print out the information schema into a table.
 quicktable_info = function(con, ...) {
   con <- con
   args <-  ensyms(...)
@@ -5,8 +7,9 @@ quicktable_info = function(con, ...) {
   tbl(con, in_schema("information_schema", "columns")) %>%
       select(contains(c("table_schema", "table_name","column_name"),ignore.case=TRUE))
 
-}
+} 
 
+# Search the tables in the information schema
 quicktable_search = function(con, ...) {
   con <- con
   args <-  ensyms(...)
@@ -45,10 +48,10 @@ read_sql = function(con, ...) {
   args <-  ensyms(...)
 
 
-  if (args[1] == "info") {
+  if (paste(args[1]) == "info") {
     quicktable_info(con)
 
-  } else if (args[1] == "search") {
+  } else if (paste(args[1]) == "search") {
     quicktable_search(con, ...)
 
   } else {
