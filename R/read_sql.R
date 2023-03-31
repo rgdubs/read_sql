@@ -1,4 +1,4 @@
-quicktable_bookmarks = function(con, ...) {
+quicktable_info = function(con, ...) {
   con <- con
   args <-  ensyms(...)
 
@@ -7,7 +7,7 @@ quicktable_bookmarks = function(con, ...) {
 
 }
 
-quicktable_lazy = function(con, ...) {
+quicktable_search = function(con, ...) {
   con <- con
   args <-  ensyms(...)
 
@@ -46,10 +46,10 @@ read_sql = function(con, ...) {
 
 
   if (args[1] == "info") {
-    quicktable_bookmarks(con)
+    quicktable_info(con)
 
-  } else if (args[1] == "lazy") {
-    quicktable_lazy(con, ...)
+  } else if (args[1] == "search") {
+    quicktable_search(con, ...)
 
   } else {
     quicktable_call(con, ...)
