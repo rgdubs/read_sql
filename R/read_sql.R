@@ -1,6 +1,7 @@
 import(dplyr)
 import(dbplyr)
-import(stringi)
+import(stringr)
+impoet(rlang)
 
 quicktable_bookmarks = function(con, ...) {
   con <- con
