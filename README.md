@@ -1,9 +1,9 @@
 # read_sql
 
 
-My SQL Reading Helper function for R
+My SQL Reading Helper function for R. An extention of DPLYR with less writing.
 
-This should work as a functional R package:
+Installing:
 ```
 library(devtools)
 install_github("rgdubs/read_sql")
