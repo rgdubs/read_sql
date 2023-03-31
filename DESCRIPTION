@@ -2,7 +2,7 @@ Package: readsql
 Title: Reads SQL
 Version: 0.1
 Authors@R: 
-    person("Randall", "Webester",role = c("aut","cre"))
+    person("Randall", "Webester",role = c("aut","cre"),email = "34316509+rgdubs@users.noreply.github.com")
 Description: Reads SQL
 License: None
 Encoding: UTF-8
