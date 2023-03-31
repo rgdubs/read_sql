@@ -1,9 +1,9 @@
 Package: readsql
 Title: Reads SQL
-Version: 1
+Version: 0.1
 Authors@R: 
-    person("Randall", "Webester")
-Description: Fill out later.
+    person("Randall", "Webester",roles = c("aut","cre"))
+Description: Reads SQL
 License: None
 Encoding: UTF-8
 Imports: dplyr,dbplyr,stringi
