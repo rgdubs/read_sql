@@ -16,7 +16,7 @@ quicktable_search = function(con, ...) {
     collect() %>%
     filter(if_any(everything(), ~str_detect(.x, paste("(?i)", args[2], sep = ""))) & nchar(table_name) == nchar(args[2]))
 }
-}
+
 
 quicktable_call = function(con, ...) {
   con <- con
@@ -57,4 +57,3 @@ read_sql = function(con, ...) {
   }
 
 }
-
